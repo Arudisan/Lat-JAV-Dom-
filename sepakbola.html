@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- buat tampilan form disini -->
+    <div id="judulbola"> 
+      <h1> hitung hasil pertandingan </h1>
+    </div>
+    <h3>Pertandingan Piala AFF 2021</h3>
+    <form action="#">
+      <div class="alert alert-danger" role="alert" id="alert" style="display: none"></div>
+        <div class="alert alert-success" role="alert" id="alertok" style="display: none"></div>
+      <div class="col">
+        <div class="row">
+        <div class="col-md-2">
+          <label for="TimA" class="form-label">Skor TIM A</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" name="TimA" id="TimA" class="form-control" />
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-md-2">
+          <label for="TimB" class="form-label">Skor TIM B</label>
+        </div>
+        <div class="col-md-1">
+          <input type="text" name="TimB" id="TimB" class="form-control" />
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-md-2">
+          <label for="waktupertandingan" class="form-label"> waktu pertandingan</label>
+        </div> 
+        <div class="col-md-1">
+          <input type="text" name="waktuPertandingan" id="WaktuPertandingan" class="form-control">
+        </div>
+      </div>
+      <div class="row pt-2">
+        <div class="col-md-3">
+          <button type="button" id="btn_lihathasil" class="btn btn-warning form-control" onclick="">Lihat Hasil</button>
+        </div>
+      </div>
+      <hr class="col-md-3"/>
+      <div class="alert alert-success mt-5" role="alert" id="hasilpertandingan" style="display: none"></div>
+      <div class="alert alert-danger mt-5" role="alert" id="" style="display: none"></div>
+    </form>
+    <!-- letakkan link ke file javascript disini -->
+    <script src="javascript/main.js"></script>
+    <script src="javascript/Sepakbola.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaftarMember</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body> 
+    <h5>Form Pendaftaran Anggota Baru</h5>
+ <form action="">
+    <div class="col"> 
+       <div class="row"> 
+           <div class="col-md-3 " > 
+             <label for="kodedaftar" class="form-label" >Kode Pendaftaran </label>
+           </div> 
+            <div class="col-md-5 " >
+                <input type="text" id="kodedaftar" class="form-control" readonly > 
+            </div>
+            <div class="row"> 
+                <div class="col-md-3 " > 
+                  <label for="namadaftar" class="form-label" >Nama  </label>
+                </div> 
+            <div class="col-md-5"> 
+                     <input type="text" id="namadaftar" class="form-control"> 
+            </div>
+            </div>
+            <div class="row"> 
+            <div class="col-md-3 " > 
+              <label for="TTL" class="form-label" >Tempat/Tanggal Lahir</label>
+            </div>
+            <div class="col-md-2"> 
+                <input type="text" id="Tempat" class="form-control"> 
+            </div> 
+            <div class="col-md-3"> 
+                 <input type="date" id="TTL" class="form-control"> 
+            </div>
+            <div class="col-md-2">
+              <div class="alert alert-secondary mt-5" role="alert" id="tampilumur" style="display: none"></div>
+            </div>
+            <div class="row"> 
+                <div class="col-md-3" > 
+                  <label for="email" class="form-label" >Email </label>
+                </div> 
+                <div class="col-md-5"> 
+                     <input type="email" id="email" class="form-control"> 
+                </div>
+            </div> 
+          </div>
+          <div class="row"> 
+            <div class="col-md-3" > 
+              <label for="jk" class="form-label" >Jenis Kelamin</label>
+            </div> 
+                <div class="col-md-3"> 
+                    <input type="radio" name="jk" id="jk"  value="PR" /> Perempuan
+                </div>
+            </div>
+            <div class="row"> 
+                <div class="col-md-3" > 
+                </div> 
+                  <div class="col-md-3"> 
+                    <input type="radio" name="jk" id="jk"  value="PR" /> laki laki
+                </div>
+             </div>
+             <div class="row"> 
+                <div class="col-md-3"> Alamat</div>
+                <div class="col-md-6"> 
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="alamat" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2"></label>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2"> </div>
+                        <div class="col-md-9">
+                          <div class="alert alert-danger mt-3" role="alert" id="pjgtxt" style="display: none"></div>
+                        </div>
+                      </div>         
+              </div> 
+             </div> 
+             <div class="row pt-2"> 
+                <div class="col-md-3 " > 
+                </div> 
+                 <div class="col-md-6 "> 
+                     <button type="button" id="kumpulkan" class=" btn btn-primary form-control" onclick="post ()"> Submit </button>
+                 </div>
+            </div>
+            <div class="row-cols-auto pt-2">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col" > Kode </th>
+                        <th scope="col"> Nama </th>
+                        <th scope="col"> Tempat Tanggal Lahir </th>
+                        <th scope="col"> Email </th>
+                        <th scope="col"> Jenis Kelamin </th>
+                        <th scope="col"> Alamat </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <th scope="row" id="kode"></th>
+                          <td id="nama"></td>
+                          <td id="ttl2"></td>
+                          <td id="mail"></td>
+                          <td id="PL"></td>
+                          <td id="alamat2"></td>
+             </tr>
+      </div>
+ </form>
+<script src="javascript/main.js"></script>
+<script src="javascript/daftar.js"></script>
+</body>
+</html>
